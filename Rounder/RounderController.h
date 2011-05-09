@@ -13,7 +13,6 @@
     IBOutlet NSImageView *sourceImage;
     
 }
-- (IBAction)processImage:(id)sender;
 - (IBAction)loadSourceImage:(id)sender;
 
 @end

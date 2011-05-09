@@ -26,63 +26,47 @@
     [super dealloc];
 }
 
-//- (IBAction)processImage:(id)sender
-//{
-//    NSLog(@"AAAA");
-//    
-//    
-//    NSImage *sourceImage;
-//    
-//    
-//    sourceImage = [NSImage alloc];
-//    
-//    [sourceImage initWithContentsOfFile:@"/Users/mixael/Desktop/1.jpg"];
-//    
-//    [sourceImage setImage:sourceImage];
-//    
-//    
-//}
-
 - (IBAction)loadSourceImage:(id)sender
 {
-    NSLog(@"loadImage");
-    
-    float targetWidth = 100;
-    
     NSImage *source = [sourceImage image];
-    NSImage *target = [NSImage alloc];    
+    NSImage *target = [NSImage alloc];
     NSSize size = [source size];
     
+    float width = 660;
+    float height = size.height / size.width * width;
+    float radius = 100;
     
-    NSLog(@"Source: width=%f, height=%f", size.width, size.height);
     
-    float targetHeight = size.height / size.width * targetWidth;
-    
-    NSLog(@"Source: width=%f, height=%f", targetWidth, targetHeight);
+    target = [target initWithSize:NSMakeSize(width, height)];
 
-    
-    [target initWithSize:NSMakeSize(targetWidth, targetHeight)];
-    
-    
     [target lockFocus];
     
-    [source drawInRect:NSMakeRect(0, 0, targetWidth, targetHeight)
+    NSBezierPath *clipPath = [NSBezierPath bezierPath];    
+    
+    [clipPath appendBezierPathWithOvalInRect:NSMakeRect(0, 0, radius,  radius)];
+    [clipPath appendBezierPathWithOvalInRect:NSMakeRect(0, height-radius, radius, radius)];
+    [clipPath appendBezierPathWithOvalInRect:NSMakeRect(width-radius, 0, radius, radius)];
+    [clipPath appendBezierPathWithOvalInRect:NSMakeRect(width, height, -radius, -radius)];
+    [clipPath appendBezierPathWithRect:NSMakeRect(0, radius/2, width, height-radius)];    
+    [clipPath appendBezierPathWithRect:NSMakeRect(radius/2, 0, width-radius, height)];    
+
+    [clipPath addClip];
+    
+    [source drawInRect:NSMakeRect(0, 0, width, height)
             fromRect:NSMakeRect(0, 0, size.width, size.height)
             operation:NSCompositeCopy
             fraction:1.0];
+
     [target unlockFocus];
-
     
+    NSBitmapImageRep *targetBitmap = [[NSBitmapImageRep alloc] initWithData:[target TIFFRepresentation]];
+    NSData *jpeg = [targetBitmap representationUsingType:NSJPEGFileType properties:nil];
     
-    NSData *targetData = [target TIFFRepresentation];
+    [jpeg writeToFile:@"/Users/mixael/Desktop/2.jpg" atomically:YES];
+    [sourceImage setImage:target];
     
-    NSBitmapImageRep *targetRep = [[NSBitmapImageRep alloc] initWithData:targetData];
-    
-    NSData *saveData = [targetRep representationUsingType:NSJPEGFileType properties:nil];
-
-    [saveData writeToFile:@"/Users/mixael/Desktop/2.jpg" atomically:YES];
-
-    
+    [target release];
+    [targetBitmap release];
 }
 
 @end
