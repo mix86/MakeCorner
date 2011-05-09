@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'RounderTests' target in the 'RounderTests' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
