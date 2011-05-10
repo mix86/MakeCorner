@@ -31,16 +31,24 @@
     NSImage *source = [sourceImage image];
     NSImage *target = [NSImage alloc];
     NSSize size = [source size];
+    NSColor *color = [colorField color];
     
-    float width = 660;
+    float width = [widthField floatValue];
     float height = size.height / size.width * width;
-    float radius = 100;
-    
+    float radius = [radiusField floatValue];
     
     target = [target initWithSize:NSMakeSize(width, height)];
 
     [target lockFocus];
     
+    
+    // Fill a background
+    [color set];
+    NSRect background = NSMakeRect(0, 0, width, height);
+    NSRectFill(background);
+    
+    
+    // Create a clipping mask
     NSBezierPath *clipPath = [NSBezierPath bezierPath];    
     
     [clipPath appendBezierPathWithOvalInRect:NSMakeRect(0, 0, radius,  radius)];
@@ -48,10 +56,12 @@
     [clipPath appendBezierPathWithOvalInRect:NSMakeRect(width-radius, 0, radius, radius)];
     [clipPath appendBezierPathWithOvalInRect:NSMakeRect(width, height, -radius, -radius)];
     [clipPath appendBezierPathWithRect:NSMakeRect(0, radius/2, width, height-radius)];    
-    [clipPath appendBezierPathWithRect:NSMakeRect(radius/2, 0, width-radius, height)];    
-
+    [clipPath appendBezierPathWithRect:NSMakeRect(radius/2, 0, width-radius, height)];
+     
     [clipPath addClip];
     
+    
+    // Copy image from source
     [source drawInRect:NSMakeRect(0, 0, width, height)
             fromRect:NSMakeRect(0, 0, size.width, size.height)
             operation:NSCompositeCopy
@@ -59,6 +69,8 @@
 
     [target unlockFocus];
     
+    
+    // Save image
     NSBitmapImageRep *targetBitmap = [[NSBitmapImageRep alloc] initWithData:[target TIFFRepresentation]];
     NSData *jpeg = [targetBitmap representationUsingType:NSJPEGFileType properties:nil];
     

@@ -11,6 +11,9 @@
 
 @interface RounderController : NSObjectController {
     IBOutlet NSImageView *sourceImage;
+    IBOutlet NSTextField *widthField;
+    IBOutlet NSTextField *radiusField;
+    IBOutlet NSColorWell *colorField;
     
 }
 - (IBAction)loadSourceImage:(id)sender;
