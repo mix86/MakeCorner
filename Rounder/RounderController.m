@@ -7,7 +7,23 @@
 //
 
 #import "RounderController.h"
+#import "MyImage.h"
 
+NSString* getTargetPath(NSString* sourcePath) {
+    /*
+        /1/2/3.jpg -> /1/2/3_sexy.jpg
+    */
+    NSString *targetPath = [[NSString alloc] init];
+    NSArray *path = [sourcePath pathComponents];
+    NSString *fileName = [path objectAtIndex:([path count] - 1)];
+    fileName = [[fileName componentsSeparatedByString:
+                 [@"." stringByAppendingString:[fileName pathExtension]]] objectAtIndex:0];
+    for (int i = 0; i < ([path count] - 1); i++) {
+        targetPath = [targetPath stringByAppendingPathComponent:[path objectAtIndex:i]];
+    }
+    targetPath = [targetPath stringByAppendingPathComponent:[fileName stringByAppendingString:@"_sexy.jpg"]];
+    return targetPath;
+}
 
 @implementation RounderController
 
@@ -28,57 +44,26 @@
 
 - (IBAction)loadSourceImage:(id)sender
 {
-    NSImage *source = [sourceImage image];
-    NSImage *target = [NSImage alloc];
-    NSSize size = [source size];
-    NSColor *color = [colorField color];
+    MyImage *image = [MyImage alloc];
     
+    // Читаем параметры из UI
     float width = [widthField floatValue];
-    float height = size.height / size.width * width;
     float radius = [radiusField floatValue];
+    NSColor *color = [colorField color];
+    NSImage *source = [sourceImage image];
     
-    target = [target initWithSize:NSMakeSize(width, height)];
-
-    [target lockFocus];
+    image = [image initWithImage: source];
     
-    
-    // Fill a background
-    [color set];
-    NSRect background = NSMakeRect(0, 0, width, height);
-    NSRectFill(background);
+    [image resize:width radius:radius color:color];
     
     
-    // Create a clipping mask
-    NSBezierPath *clipPath = [NSBezierPath bezierPath];    
+    NSString *path = getTargetPath([sourceImage imagePath]);
+    [image saveTo:path];
     
-    [clipPath appendBezierPathWithOvalInRect:NSMakeRect(0, 0, radius,  radius)];
-    [clipPath appendBezierPathWithOvalInRect:NSMakeRect(0, height-radius, radius, radius)];
-    [clipPath appendBezierPathWithOvalInRect:NSMakeRect(width-radius, 0, radius, radius)];
-    [clipPath appendBezierPathWithOvalInRect:NSMakeRect(width, height, -radius, -radius)];
-    [clipPath appendBezierPathWithRect:NSMakeRect(0, radius/2, width, height-radius)];    
-    [clipPath appendBezierPathWithRect:NSMakeRect(radius/2, 0, width-radius, height)];
-     
-    [clipPath addClip];
+    [sourceImage setImage:[image target]];
     
-    
-    // Copy image from source
-    [source drawInRect:NSMakeRect(0, 0, width, height)
-            fromRect:NSMakeRect(0, 0, size.width, size.height)
-            operation:NSCompositeCopy
-            fraction:1.0];
-
-    [target unlockFocus];
-    
-    
-    // Save image
-    NSBitmapImageRep *targetBitmap = [[NSBitmapImageRep alloc] initWithData:[target TIFFRepresentation]];
-    NSData *jpeg = [targetBitmap representationUsingType:NSJPEGFileType properties:nil];
-    
-    [jpeg writeToFile:@"/Users/mixael/Desktop/2.jpg" atomically:YES];
-    [sourceImage setImage:target];
-    
-    [target release];
-    [targetBitmap release];
+    [image release];
+//    [path release];
 }
 
 @end

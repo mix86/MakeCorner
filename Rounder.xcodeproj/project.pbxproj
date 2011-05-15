@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071D9993137EEEB1004A6C07 /* MyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 071D9992137EEEB1004A6C07 /* MyImage.m */; };
 		078211961378476700171F89 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078211951378476700171F89 /* Cocoa.framework */; };
 		078211A01378476700171F89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0782119E1378476700171F89 /* InfoPlist.strings */; };
 		078211A31378476700171F89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 078211A21378476700171F89 /* main.m */; };
@@ -18,6 +19,7 @@
 		078211BE1378476800171F89 /* RounderTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 078211BD1378476800171F89 /* RounderTests.h */; };
 		078211C01378476800171F89 /* RounderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 078211BF1378476800171F89 /* RounderTests.m */; };
 		078211D613786E5C00171F89 /* RounderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078211D513786E5C00171F89 /* RounderController.m */; };
+		079097B21379E14D005D2781 /* ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 079097B11379E14D005D2781 /* ImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071D9991137EEEB1004A6C07 /* MyImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImage.h; sourceTree = "<group>"; };
+		071D9992137EEEB1004A6C07 /* MyImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyImage.m; sourceTree = "<group>"; };
 		078211911378476700171F89 /* Rounder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rounder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		078211951378476700171F89 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		078211981378476700171F89 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -44,7 +48,7 @@
 		078211A71378476700171F89 /* RounderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RounderAppDelegate.h; sourceTree = "<group>"; };
 		078211A81378476700171F89 /* RounderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RounderAppDelegate.m; sourceTree = "<group>"; };
 		078211AB1378476800171F89 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		078211B21378476800171F89 /* RounderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RounderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		078211B21378476800171F89 /* RounderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = RounderTests.octest; path = /Users/mixael/dev/Rounder/build/Release/RounderTests.octest; sourceTree = "<absolute>"; };
 		078211B81378476800171F89 /* RounderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RounderTests-Info.plist"; sourceTree = "<group>"; };
 		078211BA1378476800171F89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		078211BC1378476800171F89 /* RounderTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RounderTests-Prefix.pch"; sourceTree = "<group>"; };
@@ -52,6 +56,8 @@
 		078211BF1378476800171F89 /* RounderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RounderTests.m; sourceTree = "<group>"; };
 		078211D413786E5C00171F89 /* RounderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RounderController.h; sourceTree = "<group>"; };
 		078211D513786E5C00171F89 /* RounderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RounderController.m; sourceTree = "<group>"; };
+		079097B01379E14D005D2781 /* ImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageView.h; sourceTree = "<group>"; };
+		079097B11379E14D005D2781 /* ImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				078211911378476700171F89 /* Rounder.app */,
-				078211B21378476800171F89 /* RounderTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,9 +123,13 @@
 				078211A71378476700171F89 /* RounderAppDelegate.h */,
 				078211A81378476700171F89 /* RounderAppDelegate.m */,
 				078211AA1378476800171F89 /* MainMenu.xib */,
+				079097B01379E14D005D2781 /* ImageView.h */,
+				079097B11379E14D005D2781 /* ImageView.m */,
 				0782119C1378476700171F89 /* Supporting Files */,
 				078211D413786E5C00171F89 /* RounderController.h */,
 				078211D513786E5C00171F89 /* RounderController.m */,
+				071D9991137EEEB1004A6C07 /* MyImage.h */,
+				071D9992137EEEB1004A6C07 /* MyImage.m */,
 			);
 			path = Rounder;
 			sourceTree = "<group>";
@@ -265,6 +274,8 @@
 				078211A31378476700171F89 /* main.m in Sources */,
 				078211A91378476700171F89 /* RounderAppDelegate.m in Sources */,
 				078211D613786E5C00171F89 /* RounderController.m in Sources */,
+				079097B21379E14D005D2781 /* ImageView.m in Sources */,
+				071D9993137EEEB1004A6C07 /* MyImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

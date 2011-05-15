@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "ImageView.h"
 
 @interface RounderController : NSObjectController {
-    IBOutlet NSImageView *sourceImage;
+    IBOutlet ImageView *sourceImage;
     IBOutlet NSTextField *widthField;
     IBOutlet NSTextField *radiusField;
     IBOutlet NSColorWell *colorField;
