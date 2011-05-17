@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface RounderAppDelegate : NSObject <NSApplicationDelegate> {
+@interface MakeCornerAppDelegate : NSObject <NSApplicationDelegate> {
 @private
     NSWindow *window;
 }

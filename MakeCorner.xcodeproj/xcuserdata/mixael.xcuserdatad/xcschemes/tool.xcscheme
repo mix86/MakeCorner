@@ -13,10 +13,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "078211901378476600171F89"
-               BuildableName = "Rounder.app"
-               BlueprintName = "Rounder"
-               ReferencedContainer = "container:Rounder.xcodeproj">
+               BlueprintIdentifier = "071D99C513808018004A6C07"
+               BuildableName = "MakeCornerCLI"
+               BlueprintName = "MakeCornerCLI"
+               ReferencedContainer = "container:MakeCorner.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -27,16 +27,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "078211B11378476800171F89"
-               BuildableName = "RounderTests.octest"
-               BlueprintName = "RounderTests"
-               ReferencedContainer = "container:Rounder.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -50,12 +40,22 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "078211901378476600171F89"
-            BuildableName = "Rounder.app"
-            BlueprintName = "Rounder"
-            ReferencedContainer = "container:Rounder.xcodeproj">
+            BlueprintIdentifier = "071D99C513808018004A6C07"
+            BuildableName = "MakeCornerCLI"
+            BlueprintName = "MakeCornerCLI"
+            ReferencedContainer = "container:MakeCorner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-w 10 "
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-r 5 "
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "078211901378476600171F89"
-            BuildableName = "Rounder.app"
-            BlueprintName = "Rounder"
-            ReferencedContainer = "container:Rounder.xcodeproj">
+            BlueprintIdentifier = "071D99C513808018004A6C07"
+            BuildableName = "MakeCornerCLI"
+            BlueprintName = "MakeCornerCLI"
+            ReferencedContainer = "container:MakeCorner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

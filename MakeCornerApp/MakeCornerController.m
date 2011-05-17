@@ -6,7 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "RounderController.h"
+#import "MakeCornerController.h"
 #import "MyImage.h"
 
 NSString* getTargetPath(NSString* sourcePath) {
@@ -25,7 +25,7 @@ NSString* getTargetPath(NSString* sourcePath) {
     return targetPath;
 }
 
-@implementation RounderController
+@implementation MakeCornerController
 
 - (id)init
 {

@@ -14,25 +14,11 @@
 		078211A01378476700171F89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0782119E1378476700171F89 /* InfoPlist.strings */; };
 		078211A31378476700171F89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 078211A21378476700171F89 /* main.m */; };
 		078211A61378476700171F89 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 078211A41378476700171F89 /* Credits.rtf */; };
-		078211A91378476700171F89 /* RounderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 078211A81378476700171F89 /* RounderAppDelegate.m */; };
+		078211A91378476700171F89 /* MakeCornerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 078211A81378476700171F89 /* MakeCornerAppDelegate.m */; };
 		078211AC1378476800171F89 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078211AA1378476800171F89 /* MainMenu.xib */; };
-		078211B31378476800171F89 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078211951378476700171F89 /* Cocoa.framework */; };
-		078211BB1378476800171F89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 078211B91378476800171F89 /* InfoPlist.strings */; };
-		078211BE1378476800171F89 /* RounderTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 078211BD1378476800171F89 /* RounderTests.h */; };
-		078211C01378476800171F89 /* RounderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 078211BF1378476800171F89 /* RounderTests.m */; };
-		078211D613786E5C00171F89 /* RounderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078211D513786E5C00171F89 /* RounderController.m */; };
+		078211D613786E5C00171F89 /* MakeCornerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078211D513786E5C00171F89 /* MakeCornerController.m */; };
 		079097B21379E14D005D2781 /* ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 079097B11379E14D005D2781 /* ImageView.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		078211B41378476800171F89 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 078211881378476500171F89 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 078211901378476600171F89;
-			remoteInfo = Rounder;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		071D99C413808018004A6C07 /* CopyFiles */ = {
@@ -49,32 +35,26 @@
 /* Begin PBXFileReference section */
 		071D9991137EEEB1004A6C07 /* MyImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImage.h; sourceTree = "<group>"; };
 		071D9992137EEEB1004A6C07 /* MyImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyImage.m; sourceTree = "<group>"; };
-		071D99C113807FD6004A6C07 /* RounderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RounderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		071D99C613808018004A6C07 /* tool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tool; sourceTree = BUILT_PRODUCTS_DIR; };
 		071D99C813808018004A6C07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		071D99CB13808018004A6C07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		071D99CE13808018004A6C07 /* tool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tool-Prefix.pch"; sourceTree = "<group>"; };
 		071D99CF13808018004A6C07 /* tool.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = tool.1; sourceTree = "<group>"; };
-		078211911378476700171F89 /* Rounder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rounder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		078211911378476700171F89 /* MakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		078211951378476700171F89 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		078211981378476700171F89 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		078211991378476700171F89 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0782119A1378476700171F89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		0782119D1378476700171F89 /* Rounder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rounder-Info.plist"; sourceTree = "<group>"; };
+		0782119D1378476700171F89 /* MakeCorner-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MakeCorner-Info.plist"; sourceTree = "<group>"; };
 		0782119F1378476700171F89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		078211A11378476700171F89 /* Rounder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rounder-Prefix.pch"; sourceTree = "<group>"; };
+		078211A11378476700171F89 /* MakeCorner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MakeCorner-Prefix.pch"; sourceTree = "<group>"; };
 		078211A21378476700171F89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		078211A51378476700171F89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		078211A71378476700171F89 /* RounderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RounderAppDelegate.h; sourceTree = "<group>"; };
-		078211A81378476700171F89 /* RounderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RounderAppDelegate.m; sourceTree = "<group>"; };
+		078211A71378476700171F89 /* MakeCornerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakeCornerAppDelegate.h; sourceTree = "<group>"; };
+		078211A81378476700171F89 /* MakeCornerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakeCornerAppDelegate.m; sourceTree = "<group>"; };
 		078211AB1378476800171F89 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		078211B81378476800171F89 /* RounderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RounderTests-Info.plist"; sourceTree = "<group>"; };
-		078211BA1378476800171F89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		078211BC1378476800171F89 /* RounderTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RounderTests-Prefix.pch"; sourceTree = "<group>"; };
-		078211BD1378476800171F89 /* RounderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RounderTests.h; sourceTree = "<group>"; };
-		078211BF1378476800171F89 /* RounderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RounderTests.m; sourceTree = "<group>"; };
-		078211D413786E5C00171F89 /* RounderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RounderController.h; sourceTree = "<group>"; };
-		078211D513786E5C00171F89 /* RounderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RounderController.m; sourceTree = "<group>"; };
+		078211D413786E5C00171F89 /* MakeCornerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeCornerController.h; sourceTree = "<group>"; };
+		078211D513786E5C00171F89 /* MakeCornerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeCornerController.m; sourceTree = "<group>"; };
 		079097B01379E14D005D2781 /* ImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageView.h; sourceTree = "<group>"; };
 		079097B11379E14D005D2781 /* ImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,24 +76,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		078211AE1378476800171F89 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				078211B31378476800171F89 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		071D99CA13808018004A6C07 /* tool */ = {
+		071D99CA13808018004A6C07 /* MakeCornerCLI */ = {
 			isa = PBXGroup;
 			children = (
 				071D99CB13808018004A6C07 /* main.m */,
 				071D99CF13808018004A6C07 /* tool.1 */,
 				071D99CD13808018004A6C07 /* Supporting Files */,
 			);
+			name = MakeCornerCLI;
 			path = tool;
 			sourceTree = "<group>";
 		};
@@ -128,9 +101,8 @@
 		078211861378476500171F89 = {
 			isa = PBXGroup;
 			children = (
-				0782119B1378476700171F89 /* Rounder */,
-				078211B61378476800171F89 /* RounderTests */,
-				071D99CA13808018004A6C07 /* tool */,
+				0782119B1378476700171F89 /* MakeCornerApp */,
+				071D99CA13808018004A6C07 /* MakeCornerCLI */,
 				078211941378476700171F89 /* Frameworks */,
 				078211921378476700171F89 /* Products */,
 			);
@@ -139,8 +111,7 @@
 		078211921378476700171F89 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				078211911378476700171F89 /* Rounder.app */,
-				071D99C113807FD6004A6C07 /* RounderTests.octest */,
+				078211911378476700171F89 /* MakeCorner.app */,
 				071D99C613808018004A6C07 /* tool */,
 			);
 			name = Products;
@@ -166,51 +137,31 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		0782119B1378476700171F89 /* Rounder */ = {
+		0782119B1378476700171F89 /* MakeCornerApp */ = {
 			isa = PBXGroup;
 			children = (
-				078211A71378476700171F89 /* RounderAppDelegate.h */,
-				078211A81378476700171F89 /* RounderAppDelegate.m */,
+				078211A71378476700171F89 /* MakeCornerAppDelegate.h */,
+				078211A81378476700171F89 /* MakeCornerAppDelegate.m */,
 				078211AA1378476800171F89 /* MainMenu.xib */,
 				079097B01379E14D005D2781 /* ImageView.h */,
 				079097B11379E14D005D2781 /* ImageView.m */,
 				0782119C1378476700171F89 /* Supporting Files */,
-				078211D413786E5C00171F89 /* RounderController.h */,
-				078211D513786E5C00171F89 /* RounderController.m */,
+				078211D413786E5C00171F89 /* MakeCornerController.h */,
+				078211D513786E5C00171F89 /* MakeCornerController.m */,
 				071D9991137EEEB1004A6C07 /* MyImage.h */,
 				071D9992137EEEB1004A6C07 /* MyImage.m */,
 			);
-			path = Rounder;
+			path = MakeCornerApp;
 			sourceTree = "<group>";
 		};
 		0782119C1378476700171F89 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0782119D1378476700171F89 /* Rounder-Info.plist */,
+				0782119D1378476700171F89 /* MakeCorner-Info.plist */,
 				0782119E1378476700171F89 /* InfoPlist.strings */,
-				078211A11378476700171F89 /* Rounder-Prefix.pch */,
+				078211A11378476700171F89 /* MakeCorner-Prefix.pch */,
 				078211A21378476700171F89 /* main.m */,
 				078211A41378476700171F89 /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		078211B61378476800171F89 /* RounderTests */ = {
-			isa = PBXGroup;
-			children = (
-				078211BD1378476800171F89 /* RounderTests.h */,
-				078211BF1378476800171F89 /* RounderTests.m */,
-				078211B71378476800171F89 /* Supporting Files */,
-			);
-			path = RounderTests;
-			sourceTree = "<group>";
-		};
-		078211B71378476800171F89 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				078211B81378476800171F89 /* RounderTests-Info.plist */,
-				078211B91378476800171F89 /* InfoPlist.strings */,
-				078211BC1378476800171F89 /* RounderTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -218,9 +169,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		071D99C513808018004A6C07 /* tool */ = {
+		071D99C513808018004A6C07 /* MakeCornerCLI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 071D99D213808018004A6C07 /* Build configuration list for PBXNativeTarget "tool" */;
+			buildConfigurationList = 071D99D213808018004A6C07 /* Build configuration list for PBXNativeTarget "MakeCornerCLI" */;
 			buildPhases = (
 				071D99C213808018004A6C07 /* Sources */,
 				071D99C313808018004A6C07 /* Frameworks */,
@@ -230,14 +181,14 @@
 			);
 			dependencies = (
 			);
-			name = tool;
+			name = MakeCornerCLI;
 			productName = tool;
 			productReference = 071D99C613808018004A6C07 /* tool */;
 			productType = "com.apple.product-type.tool";
 		};
-		078211901378476600171F89 /* Rounder */ = {
+		078211901378476600171F89 /* MakeCorner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 078211C31378476800171F89 /* Build configuration list for PBXNativeTarget "Rounder" */;
+			buildConfigurationList = 078211C31378476800171F89 /* Build configuration list for PBXNativeTarget "MakeCorner" */;
 			buildPhases = (
 				0782118D1378476600171F89 /* Sources */,
 				0782118E1378476600171F89 /* Frameworks */,
@@ -247,36 +198,17 @@
 			);
 			dependencies = (
 			);
-			name = Rounder;
-			productName = Rounder;
-			productReference = 078211911378476700171F89 /* Rounder.app */;
+			name = MakeCorner;
+			productName = MakeCornerApp;
+			productReference = 078211911378476700171F89 /* MakeCorner.app */;
 			productType = "com.apple.product-type.application";
-		};
-		078211B11378476800171F89 /* RounderTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 078211C61378476800171F89 /* Build configuration list for PBXNativeTarget "RounderTests" */;
-			buildPhases = (
-				078211AD1378476800171F89 /* Sources */,
-				078211AE1378476800171F89 /* Frameworks */,
-				078211AF1378476800171F89 /* Resources */,
-				078211B01378476800171F89 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				078211B51378476800171F89 /* PBXTargetDependency */,
-			);
-			name = RounderTests;
-			productName = RounderTests;
-			productReference = 071D99C113807FD6004A6C07 /* RounderTests.octest */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		078211881378476500171F89 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 0782118B1378476500171F89 /* Build configuration list for PBXProject "Rounder" */;
+			buildConfigurationList = 0782118B1378476500171F89 /* Build configuration list for PBXProject "MakeCorner" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -288,9 +220,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				078211901378476600171F89 /* Rounder */,
-				078211B11378476800171F89 /* RounderTests */,
-				071D99C513808018004A6C07 /* tool */,
+				078211901378476600171F89 /* MakeCorner */,
+				071D99C513808018004A6C07 /* MakeCornerCLI */,
 			);
 		};
 /* End PBXProject section */
@@ -306,32 +237,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		078211AF1378476800171F89 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				078211BB1378476800171F89 /* InfoPlist.strings in Resources */,
-				078211BE1378476800171F89 /* RounderTests.h in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		078211B01378476800171F89 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		071D99C213808018004A6C07 /* Sources */ = {
@@ -347,30 +253,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				078211A31378476700171F89 /* main.m in Sources */,
-				078211A91378476700171F89 /* RounderAppDelegate.m in Sources */,
-				078211D613786E5C00171F89 /* RounderController.m in Sources */,
+				078211A91378476700171F89 /* MakeCornerAppDelegate.m in Sources */,
+				078211D613786E5C00171F89 /* MakeCornerController.m in Sources */,
 				079097B21379E14D005D2781 /* ImageView.m in Sources */,
 				071D9993137EEEB1004A6C07 /* MyImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		078211AD1378476800171F89 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				078211C01378476800171F89 /* RounderTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		078211B51378476800171F89 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 078211901378476600171F89 /* Rounder */;
-			targetProxy = 078211B41378476800171F89 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0782119E1378476700171F89 /* InfoPlist.strings */ = {
@@ -395,14 +285,6 @@
 				078211AB1378476800171F89 /* en */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		078211B91378476800171F89 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				078211BA1378476800171F89 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -474,9 +356,9 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Rounder/Rounder-Prefix.pch";
-				INFOPLIST_FILE = "Rounder/Rounder-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MakeCornerApp/MakeCorner-Prefix.pch";
+				INFOPLIST_FILE = "MakeCornerApp/MakeCorner-Info.plist";
+				PRODUCT_NAME = MakeCorner;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -489,69 +371,26 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Rounder/Rounder-Prefix.pch";
-				INFOPLIST_FILE = "Rounder/Rounder-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MakeCornerApp/MakeCorner-Prefix.pch";
+				INFOPLIST_FILE = "MakeCornerApp/MakeCorner-Info.plist";
+				PRODUCT_NAME = MakeCorner;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		078211C71378476800171F89 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rounder.app/Contents/MacOS/Rounder";
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RounderTests/RounderTests-Prefix.pch";
-				INFOPLIST_FILE = "RounderTests/RounderTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-framework",
-					SenTestingKit,
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		078211C81378476800171F89 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rounder.app/Contents/MacOS/Rounder";
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RounderTests/RounderTests-Prefix.pch";
-				INFOPLIST_FILE = "RounderTests/RounderTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-framework",
-					SenTestingKit,
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		071D99D213808018004A6C07 /* Build configuration list for PBXNativeTarget "tool" */ = {
+		071D99D213808018004A6C07 /* Build configuration list for PBXNativeTarget "MakeCornerCLI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				071D99D013808018004A6C07 /* Debug */,
 				071D99D113808018004A6C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		0782118B1378476500171F89 /* Build configuration list for PBXProject "Rounder" */ = {
+		0782118B1378476500171F89 /* Build configuration list for PBXProject "MakeCorner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				078211C11378476800171F89 /* Debug */,
@@ -560,20 +399,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		078211C31378476800171F89 /* Build configuration list for PBXNativeTarget "Rounder" */ = {
+		078211C31378476800171F89 /* Build configuration list for PBXNativeTarget "MakeCorner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				078211C41378476800171F89 /* Debug */,
 				078211C51378476800171F89 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		078211C61378476800171F89 /* Build configuration list for PBXNativeTarget "RounderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				078211C71378476800171F89 /* Debug */,
-				078211C81378476800171F89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

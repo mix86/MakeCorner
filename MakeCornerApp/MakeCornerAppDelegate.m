@@ -6,9 +6,9 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "RounderAppDelegate.h"
+#import "MakeCornerAppDelegate.h"
 
-@implementation RounderAppDelegate
+@implementation MakeCornerAppDelegate
 
 @synthesize window;
 

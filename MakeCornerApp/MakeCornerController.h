@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ImageView.h"
 
-@interface RounderController : NSObjectController {
+@interface MakeCornerController : NSObjectController {
     IBOutlet ImageView *sourceImage;
     IBOutlet NSTextField *widthField;
     IBOutlet NSTextField *radiusField;
