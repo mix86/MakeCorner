@@ -1,8 +1,8 @@
 //
 //  main.m
-//  tool
+//  MakeCornerCLI
 //
-//  Created by Mikhail B. Petrov on 16.05.11.
+//  Created by Mikhail B. Petrov on 18.05.11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
@@ -13,7 +13,7 @@ int main (int argc, char *argv[])
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
     NSLog(@"makecorner");
     
-    NSDictionary *argsDict = [[[NSDictionary alloc] init] autorelease];
+    NSMutableDictionary *argsDict = [[[NSMutableDictionary alloc] init] autorelease];
     
     char *widthArg = "660";
     char *radiusArg = "10";
@@ -45,7 +45,7 @@ int main (int argc, char *argv[])
         default:
             abort ();
     }
-
+    
     for (index = optind; index < argc; index++)
         NSLog(@"Non-option argument %s\n", argv[index]);
     
@@ -54,12 +54,12 @@ int main (int argc, char *argv[])
     NSString *width = [[[NSString alloc] initWithCString:widthArg encoding:NSUTF8StringEncoding] autorelease];
     NSString *radius = [[[NSString alloc] initWithCString:widthArg encoding:NSUTF8StringEncoding] autorelease];
     NSString *color = [[[NSString alloc] initWithCString:widthArg encoding:NSUTF8StringEncoding] autorelease];
-
+    
     
     [argsDict setValue:width forKey:@"width"];
     [argsDict setValue:radius forKey:@"radius"];
     [argsDict setValue:color forKey:@"color"];
-        
+    
     [pool drain];
     return 0;
 }

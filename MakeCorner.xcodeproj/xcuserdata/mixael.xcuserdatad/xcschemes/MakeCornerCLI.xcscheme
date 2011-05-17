@@ -13,9 +13,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "078211901378476600171F89"
-               BuildableName = "MakeCorner.app"
-               BlueprintName = "MakeCorner"
+               BlueprintIdentifier = "07167A97138338E000A8856E"
+               BuildableName = "MakeCornerCLI"
+               BlueprintName = "MakeCornerCLI"
                ReferencedContainer = "container:MakeCorner.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -27,16 +27,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "078211B11378476800171F89"
-               BuildableName = "MakeCornerAppTests.octest"
-               BlueprintName = "MakeCornerTests"
-               ReferencedContainer = "container:MakeCorner.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -50,9 +40,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "078211901378476600171F89"
-            BuildableName = "MakeCorner.app"
-            BlueprintName = "MakeCorner"
+            BlueprintIdentifier = "07167A97138338E000A8856E"
+            BuildableName = "MakeCornerCLI"
+            BlueprintName = "MakeCornerCLI"
             ReferencedContainer = "container:MakeCorner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -69,9 +59,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "078211901378476600171F89"
-            BuildableName = "MakeCorner.app"
-            BlueprintName = "MakeCorner"
+            BlueprintIdentifier = "07167A97138338E000A8856E"
+            BuildableName = "MakeCornerCLI"
+            BlueprintName = "MakeCornerCLI"
             ReferencedContainer = "container:MakeCorner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

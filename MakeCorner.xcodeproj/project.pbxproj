@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07167A9A138338E000A8856E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071D99C813808018004A6C07 /* Foundation.framework */; };
+		07167A9D138338E000A8856E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07167A9C138338E000A8856E /* main.m */; };
 		071D9993137EEEB1004A6C07 /* MyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 071D9992137EEEB1004A6C07 /* MyImage.m */; };
-		071D99C913808018004A6C07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071D99C813808018004A6C07 /* Foundation.framework */; };
-		071D99CC13808018004A6C07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 071D99CB13808018004A6C07 /* main.m */; };
 		078211961378476700171F89 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078211951378476700171F89 /* Cocoa.framework */; };
 		078211A01378476700171F89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0782119E1378476700171F89 /* InfoPlist.strings */; };
 		078211A31378476700171F89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 078211A21378476700171F89 /* main.m */; };
@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		071D99C413808018004A6C07 /* CopyFiles */ = {
+		07167A96138338E000A8856E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -33,13 +33,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07167A98138338E000A8856E /* MakeCornerCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MakeCornerCLI; sourceTree = BUILT_PRODUCTS_DIR; };
+		07167A9C138338E000A8856E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07167A9F138338E000A8856E /* MakeCornerCLI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MakeCornerCLI-Prefix.pch"; sourceTree = "<group>"; };
+		07167AA0138338E000A8856E /* MakeCornerCLI.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MakeCornerCLI.1; sourceTree = "<group>"; };
 		071D9991137EEEB1004A6C07 /* MyImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImage.h; sourceTree = "<group>"; };
 		071D9992137EEEB1004A6C07 /* MyImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyImage.m; sourceTree = "<group>"; };
-		071D99C613808018004A6C07 /* tool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tool; sourceTree = BUILT_PRODUCTS_DIR; };
 		071D99C813808018004A6C07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		071D99CB13808018004A6C07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		071D99CE13808018004A6C07 /* tool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tool-Prefix.pch"; sourceTree = "<group>"; };
-		071D99CF13808018004A6C07 /* tool.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = tool.1; sourceTree = "<group>"; };
 		078211911378476700171F89 /* MakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		078211951378476700171F89 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		078211981378476700171F89 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -60,11 +60,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		071D99C313808018004A6C07 /* Frameworks */ = {
+		07167A95138338E000A8856E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				071D99C913808018004A6C07 /* Foundation.framework in Frameworks */,
+				07167A9A138338E000A8856E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,21 +79,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		071D99CA13808018004A6C07 /* MakeCornerCLI */ = {
+		07167A9B138338E000A8856E /* MakeCornerCLI */ = {
 			isa = PBXGroup;
 			children = (
-				071D99CB13808018004A6C07 /* main.m */,
-				071D99CF13808018004A6C07 /* tool.1 */,
-				071D99CD13808018004A6C07 /* Supporting Files */,
+				07167A9C138338E000A8856E /* main.m */,
+				07167AA0138338E000A8856E /* MakeCornerCLI.1 */,
+				07167A9E138338E000A8856E /* Supporting Files */,
 			);
-			name = MakeCornerCLI;
-			path = tool;
+			path = MakeCornerCLI;
 			sourceTree = "<group>";
 		};
-		071D99CD13808018004A6C07 /* Supporting Files */ = {
+		07167A9E138338E000A8856E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				071D99CE13808018004A6C07 /* tool-Prefix.pch */,
+				07167A9F138338E000A8856E /* MakeCornerCLI-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -102,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				0782119B1378476700171F89 /* MakeCornerApp */,
-				071D99CA13808018004A6C07 /* MakeCornerCLI */,
+				07167A9B138338E000A8856E /* MakeCornerCLI */,
 				078211941378476700171F89 /* Frameworks */,
 				078211921378476700171F89 /* Products */,
 			);
@@ -112,7 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				078211911378476700171F89 /* MakeCorner.app */,
-				071D99C613808018004A6C07 /* tool */,
+				07167A98138338E000A8856E /* MakeCornerCLI */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,21 +168,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		071D99C513808018004A6C07 /* MakeCornerCLI */ = {
+		07167A97138338E000A8856E /* MakeCornerCLI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 071D99D213808018004A6C07 /* Build configuration list for PBXNativeTarget "MakeCornerCLI" */;
+			buildConfigurationList = 07167AA1138338E000A8856E /* Build configuration list for PBXNativeTarget "MakeCornerCLI" */;
 			buildPhases = (
-				071D99C213808018004A6C07 /* Sources */,
-				071D99C313808018004A6C07 /* Frameworks */,
-				071D99C413808018004A6C07 /* CopyFiles */,
+				07167A94138338E000A8856E /* Sources */,
+				07167A95138338E000A8856E /* Frameworks */,
+				07167A96138338E000A8856E /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MakeCornerCLI;
-			productName = tool;
-			productReference = 071D99C613808018004A6C07 /* tool */;
+			productName = MakeCornerCLI;
+			productReference = 07167A98138338E000A8856E /* MakeCornerCLI */;
 			productType = "com.apple.product-type.tool";
 		};
 		078211901378476600171F89 /* MakeCorner */ = {
@@ -221,7 +220,7 @@
 			projectRoot = "";
 			targets = (
 				078211901378476600171F89 /* MakeCorner */,
-				071D99C513808018004A6C07 /* MakeCornerCLI */,
+				07167A97138338E000A8856E /* MakeCornerCLI */,
 			);
 		};
 /* End PBXProject section */
@@ -240,11 +239,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		071D99C213808018004A6C07 /* Sources */ = {
+		07167A94138338E000A8856E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				071D99CC13808018004A6C07 /* main.m in Sources */,
+				07167A9D138338E000A8856E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +289,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		071D99D013808018004A6C07 /* Debug */ = {
+		07167AA2138338E000A8856E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -298,12 +297,12 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "tool/tool-Prefix.pch";
+				GCC_PREFIX_HEADER = "MakeCornerCLI/MakeCornerCLI-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		071D99D113808018004A6C07 /* Release */ = {
+		07167AA3138338E000A8856E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -311,7 +310,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "tool/tool-Prefix.pch";
+				GCC_PREFIX_HEADER = "MakeCornerCLI/MakeCornerCLI-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -381,14 +380,13 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		071D99D213808018004A6C07 /* Build configuration list for PBXNativeTarget "MakeCornerCLI" */ = {
+		07167AA1138338E000A8856E /* Build configuration list for PBXNativeTarget "MakeCornerCLI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				071D99D013808018004A6C07 /* Debug */,
-				071D99D113808018004A6C07 /* Release */,
+				07167AA2138338E000A8856E /* Debug */,
+				07167AA3138338E000A8856E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		0782118B1378476500171F89 /* Build configuration list for PBXProject "MakeCorner" */ = {
 			isa = XCConfigurationList;
