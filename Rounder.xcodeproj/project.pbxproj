@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		071D9993137EEEB1004A6C07 /* MyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 071D9992137EEEB1004A6C07 /* MyImage.m */; };
+		071D99C913808018004A6C07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071D99C813808018004A6C07 /* Foundation.framework */; };
+		071D99CC13808018004A6C07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 071D99CB13808018004A6C07 /* main.m */; };
 		078211961378476700171F89 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078211951378476700171F89 /* Cocoa.framework */; };
 		078211A01378476700171F89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0782119E1378476700171F89 /* InfoPlist.strings */; };
 		078211A31378476700171F89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 078211A21378476700171F89 /* main.m */; };
@@ -32,9 +34,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		071D99C413808018004A6C07 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		071D9991137EEEB1004A6C07 /* MyImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImage.h; sourceTree = "<group>"; };
 		071D9992137EEEB1004A6C07 /* MyImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyImage.m; sourceTree = "<group>"; };
+		071D99C113807FD6004A6C07 /* RounderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RounderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		071D99C613808018004A6C07 /* tool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tool; sourceTree = BUILT_PRODUCTS_DIR; };
+		071D99C813808018004A6C07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		071D99CB13808018004A6C07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		071D99CE13808018004A6C07 /* tool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tool-Prefix.pch"; sourceTree = "<group>"; };
+		071D99CF13808018004A6C07 /* tool.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = tool.1; sourceTree = "<group>"; };
 		078211911378476700171F89 /* Rounder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rounder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		078211951378476700171F89 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		078211981378476700171F89 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -48,7 +68,6 @@
 		078211A71378476700171F89 /* RounderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RounderAppDelegate.h; sourceTree = "<group>"; };
 		078211A81378476700171F89 /* RounderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RounderAppDelegate.m; sourceTree = "<group>"; };
 		078211AB1378476800171F89 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		078211B21378476800171F89 /* RounderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = RounderTests.octest; path = /Users/mixael/dev/Rounder/build/Release/RounderTests.octest; sourceTree = "<absolute>"; };
 		078211B81378476800171F89 /* RounderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RounderTests-Info.plist"; sourceTree = "<group>"; };
 		078211BA1378476800171F89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		078211BC1378476800171F89 /* RounderTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RounderTests-Prefix.pch"; sourceTree = "<group>"; };
@@ -61,6 +80,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		071D99C313808018004A6C07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071D99C913808018004A6C07 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0782118E1378476600171F89 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,11 +107,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		071D99CA13808018004A6C07 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				071D99CB13808018004A6C07 /* main.m */,
+				071D99CF13808018004A6C07 /* tool.1 */,
+				071D99CD13808018004A6C07 /* Supporting Files */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		071D99CD13808018004A6C07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				071D99CE13808018004A6C07 /* tool-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		078211861378476500171F89 = {
 			isa = PBXGroup;
 			children = (
 				0782119B1378476700171F89 /* Rounder */,
 				078211B61378476800171F89 /* RounderTests */,
+				071D99CA13808018004A6C07 /* tool */,
 				078211941378476700171F89 /* Frameworks */,
 				078211921378476700171F89 /* Products */,
 			);
@@ -94,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				078211911378476700171F89 /* Rounder.app */,
+				071D99C113807FD6004A6C07 /* RounderTests.octest */,
+				071D99C613808018004A6C07 /* tool */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				078211951378476700171F89 /* Cocoa.framework */,
+				071D99C813808018004A6C07 /* Foundation.framework */,
 				078211971378476700171F89 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -169,6 +218,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		071D99C513808018004A6C07 /* tool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071D99D213808018004A6C07 /* Build configuration list for PBXNativeTarget "tool" */;
+			buildPhases = (
+				071D99C213808018004A6C07 /* Sources */,
+				071D99C313808018004A6C07 /* Frameworks */,
+				071D99C413808018004A6C07 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tool;
+			productName = tool;
+			productReference = 071D99C613808018004A6C07 /* tool */;
+			productType = "com.apple.product-type.tool";
+		};
 		078211901378476600171F89 /* Rounder */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 078211C31378476800171F89 /* Build configuration list for PBXNativeTarget "Rounder" */;
@@ -202,7 +268,7 @@
 			);
 			name = RounderTests;
 			productName = RounderTests;
-			productReference = 078211B21378476800171F89 /* RounderTests.octest */;
+			productReference = 071D99C113807FD6004A6C07 /* RounderTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -224,6 +290,7 @@
 			targets = (
 				078211901378476600171F89 /* Rounder */,
 				078211B11378476800171F89 /* RounderTests */,
+				071D99C513808018004A6C07 /* tool */,
 			);
 		};
 /* End PBXProject section */
@@ -267,6 +334,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		071D99C213808018004A6C07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071D99CC13808018004A6C07 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0782118D1378476600171F89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,6 +408,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		071D99D013808018004A6C07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tool/tool-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		071D99D113808018004A6C07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tool/tool-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		078211C11378476800171F89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -442,6 +543,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		071D99D213808018004A6C07 /* Build configuration list for PBXNativeTarget "tool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071D99D013808018004A6C07 /* Debug */,
+				071D99D113808018004A6C07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		0782118B1378476500171F89 /* Build configuration list for PBXProject "Rounder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
