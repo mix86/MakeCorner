@@ -5,7 +5,7 @@
 //  Created by Mikhail B. Petrov on 14.05.11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
-
+#import <Cocoa/Cocoa.h>
 #import "MyImage.h"
 
 
@@ -28,6 +28,18 @@
     source = sourceImage;
     target = [NSImage alloc];
     return self;
+}
+
+- (id)initWithContentOfFile: (NSString *) file
+{
+    self = [self init];
+    NSImage *sourceImage = [[[NSImage alloc] initWithContentsOfFile:file] autorelease];
+    source = sourceImage;
+    target = [NSImage alloc];
+    return self;
+
+    
+    return [self initWithImage:sourceImage];
 }
 
 - (void)dealloc
@@ -81,6 +93,6 @@
     
     [jpeg writeToFile:path atomically:YES];
     
-    [targetBitmap release];
+//    [targetBitmap release];
 }
 @end

@@ -10,6 +10,8 @@
 		07167A9A138338E000A8856E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071D99C813808018004A6C07 /* Foundation.framework */; };
 		07167A9D138338E000A8856E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07167A9C138338E000A8856E /* main.m */; };
 		071D9993137EEEB1004A6C07 /* MyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 071D9992137EEEB1004A6C07 /* MyImage.m */; };
+		07613FAE13885CD100E6D149 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07613FAD13885CD100E6D149 /* Cocoa.framework */; };
+		07613FB013885E3700E6D149 /* MyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 071D9992137EEEB1004A6C07 /* MyImage.m */; };
 		078211961378476700171F89 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078211951378476700171F89 /* Cocoa.framework */; };
 		078211A01378476700171F89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0782119E1378476700171F89 /* InfoPlist.strings */; };
 		078211A31378476700171F89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 078211A21378476700171F89 /* main.m */; };
@@ -40,6 +42,7 @@
 		071D9991137EEEB1004A6C07 /* MyImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImage.h; sourceTree = "<group>"; };
 		071D9992137EEEB1004A6C07 /* MyImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyImage.m; sourceTree = "<group>"; };
 		071D99C813808018004A6C07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		07613FAD13885CD100E6D149 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		078211911378476700171F89 /* MakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		078211951378476700171F89 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		078211981378476700171F89 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -64,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07613FAE13885CD100E6D149 /* Cocoa.framework in Frameworks */,
 				07167A9A138338E000A8856E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +104,7 @@
 		078211861378476500171F89 = {
 			isa = PBXGroup;
 			children = (
+				07613FAD13885CD100E6D149 /* Cocoa.framework */,
 				0782119B1378476700171F89 /* MakeCornerApp */,
 				07167A9B138338E000A8856E /* MakeCornerCLI */,
 				078211941378476700171F89 /* Frameworks */,
@@ -244,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07167A9D138338E000A8856E /* main.m in Sources */,
+				07613FB013885E3700E6D149 /* MyImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +393,7 @@
 				07167AA3138338E000A8856E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0782118B1378476500171F89 /* Build configuration list for PBXProject "MakeCorner" */ = {
 			isa = XCConfigurationList;

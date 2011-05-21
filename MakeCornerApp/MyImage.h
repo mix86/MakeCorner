@@ -21,6 +21,7 @@
 @property (assign, readwrite) NSString *sourcePath;
 
 - (id)initWithImage: (NSImage *) sourceImage;
+- (id)initWithContentOfFile: (NSString *) file;
 - (void)resize: (float) width radius: (float) radius color: (NSColor *) color;
 - (void) saveTo: (NSString*) path;
 
