@@ -53,6 +53,8 @@
     
     float height = size.height / size.width * width;
     
+//    radius = radius * size.width / width / 2;
+    
     target = [target initWithSize:NSMakeSize(width, height)];
     
     [target lockFocus];
@@ -93,6 +95,6 @@
     
     [jpeg writeToFile:path atomically:YES];
     
-//    [targetBitmap release];
+    [targetBitmap release];
 }
 @end

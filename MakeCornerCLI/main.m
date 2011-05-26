@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import <Foundation/Foundation.h>
 #import "MyImage.h"
+#import "NSColorAdditions.h"
 
 int parseArgs(char** argv, int argc, NSMutableDictionary *kwargs, NSMutableArray *args) 
 {
@@ -17,7 +18,6 @@ int parseArgs(char** argv, int argc, NSMutableDictionary *kwargs, NSMutableArray
     char *colorArg = "#ffffff";
     int index;
     int c;
-    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
     
     opterr = 0;
     
@@ -52,19 +52,40 @@ int parseArgs(char** argv, int argc, NSMutableDictionary *kwargs, NSMutableArray
     NSString *widthStr = [[[NSString alloc] initWithCString:widthArg encoding:NSUTF8StringEncoding] autorelease];
     NSString *radiusStr = [[[NSString alloc] initWithCString:radiusArg encoding:NSUTF8StringEncoding] autorelease];
     NSString *colorStr = [[[NSString alloc] initWithCString:colorArg encoding:NSUTF8StringEncoding] autorelease];
-    
+
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
     [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
     
     NSNumber *width = [formatter numberFromString:widthStr];
     NSNumber *radius = [formatter numberFromString:radiusStr];
+    
+    [formatter release];
+    
+    NSPredicate *matchPred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"#[0-9a-f]{6}"];  
+    
+    BOOL matchColor1 = [matchPred evaluateWithObject:colorStr];
+    
+    matchPred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"#[0-9a-f]{6}"];
+    
+    BOOL matchColor2 = [matchPred evaluateWithObject:colorStr];
 
-    NSColor *color = [NSColor colorWithCalibratedRed:1.0f green:1.0f blue:1.0f alpha:1.0f];
+    if (matchColor1) {
+        colorStr = [colorStr substringFromIndex:1];
+    }
+    else if (matchColor2) {
+        //pass
+    }
+    else {
+        printf("Wrong color format: %s\n", colorArg);
+        return 1;
+    }
+
+    NSColor *color = [NSColor colorFromHex:colorStr];
     
     [kwargs setValue:width forKey:@"width"];
     [kwargs setValue:radius forKey:@"radius"];
     [kwargs setValue:color forKey:@"color"];
 
-    [formatter release];
 
     return 0;
 
@@ -90,7 +111,7 @@ NSString* getTargetPath(NSString* sourcePath) {
     /*
      /1/2/3.jpg -> /1/2/3_sexy.jpg
      */
-    NSString *targetPath = [[NSString alloc] init];
+    NSString *targetPath = [[[NSString alloc] init] autorelease];
     NSArray *path = [sourcePath pathComponents];
     NSString *fileName = [path objectAtIndex:([path count] - 1)];
     fileName = [[fileName componentsSeparatedByString:
@@ -122,9 +143,10 @@ void processImages(NSArray *images, NSDictionary *kwargs)
         
         [image saveTo:targetPath];
         [image release];
+        printf(".");
         
     }
-
+    printf("done\n");
 }
 
 int main (int argc, char *argv[])
@@ -132,7 +154,7 @@ int main (int argc, char *argv[])
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];    
     NSMutableDictionary *kwargsDict = [[[NSMutableDictionary alloc] init] autorelease];
     NSMutableArray *argsArray = [[[NSMutableArray alloc] init] autorelease];
-    NSString *dir = [[[NSString alloc] init] autorelease];
+    NSString *dir;
     
     int rc = parseArgs(argv, argc, kwargsDict, argsArray);
     if(!rc)

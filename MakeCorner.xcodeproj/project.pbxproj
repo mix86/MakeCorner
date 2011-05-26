@@ -20,6 +20,8 @@
 		078211AC1378476800171F89 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078211AA1378476800171F89 /* MainMenu.xib */; };
 		078211D613786E5C00171F89 /* MakeCornerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078211D513786E5C00171F89 /* MakeCornerController.m */; };
 		079097B21379E14D005D2781 /* ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 079097B11379E14D005D2781 /* ImageView.m */; };
+		07DAED091388F18100FA9010 /* NSColorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DAED081388F18100FA9010 /* NSColorAdditions.m */; };
+		07DAED0A1388F18100FA9010 /* NSColorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DAED081388F18100FA9010 /* NSColorAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +62,8 @@
 		078211D513786E5C00171F89 /* MakeCornerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeCornerController.m; sourceTree = "<group>"; };
 		079097B01379E14D005D2781 /* ImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageView.h; sourceTree = "<group>"; };
 		079097B11379E14D005D2781 /* ImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageView.m; sourceTree = "<group>"; };
+		07DAED071388F18100FA9010 /* NSColorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSColorAdditions.h; sourceTree = "<group>"; };
+		07DAED081388F18100FA9010 /* NSColorAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSColorAdditions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				07167A9C138338E000A8856E /* main.m */,
+				07DAED071388F18100FA9010 /* NSColorAdditions.h */,
+				07DAED081388F18100FA9010 /* NSColorAdditions.m */,
 				07167AA0138338E000A8856E /* MakeCornerCLI.1 */,
 				07167A9E138338E000A8856E /* Supporting Files */,
 			);
@@ -250,6 +256,7 @@
 			files = (
 				07167A9D138338E000A8856E /* main.m in Sources */,
 				07613FB013885E3700E6D149 /* MyImage.m in Sources */,
+				07DAED0A1388F18100FA9010 /* NSColorAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +269,7 @@
 				078211D613786E5C00171F89 /* MakeCornerController.m in Sources */,
 				079097B21379E14D005D2781 /* ImageView.m in Sources */,
 				071D9993137EEEB1004A6C07 /* MyImage.m in Sources */,
+				07DAED091388F18100FA9010 /* NSColorAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

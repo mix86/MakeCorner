@@ -48,7 +48,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "-w 100"
+            argument = "-w 100 -c #ff00ff3"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
